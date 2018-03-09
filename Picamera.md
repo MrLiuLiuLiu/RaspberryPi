@@ -10,7 +10,7 @@
 ### 啟動相機模組 : 
 
 >> 開啟樹梅派設定: sudo raspi-config
-
+   ![image](https://github.com/MrLiuLiuLiu/RaspberryPi/blob/master/%E5%95%9F%E5%8B%95%E7%9B%B8%E6%A9%9F%E6%A8%A1%E7%B5%84-%E6%AD%A5%E9%A9%9F%E5%9B%9B.png)
 >> 選擇第5項 : Interfacing Options 
 >> 選擇 Pi Camera , 按下Enable
  

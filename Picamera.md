@@ -1,10 +1,15 @@
-# pi camera 使用教學
+# Pi Camera 使用教學
 
-##硬體設定
+  這邊將Pi Camera的使用步驟分成三個部分 : 
+  
+  -硬體設定: 介紹如何在樹梅派的系統上啟動Pi Camera的功能，並測試Pi Camera 有無正常運作
+  -軟體安裝: 介紹
+  -
+## 硬體設定
 
-	###啟動相機模組 : 
+### 啟動相機模組 : 
 
-		####開啟樹梅派設定: sudo raspi-config
+####開啟樹梅派設定: sudo raspi-config
 		####選擇第5項 : Interfacing Options 
 		####選擇 Pi Camera , 按下Enable
  

@@ -15,14 +15,18 @@
 ### 安裝motion服務:
 
 更新系統至最新版本
+```
 sudo apt-get update
+```
 
 安裝motion軟體
+```
 sudo apt-get install motion
+```
 
 ### 設定motion服務
 
-修改motion .conf 設定檔參數
+#### 修改motion .conf 設定檔參數
 -----------------------------------------------------------------------------------------------------------
 ```
 sudo nano /etc/motion/motion.conf
@@ -50,7 +54,7 @@ control_port 8080
 web_port 8081
 ```
 
-設定motion為常駐服務 
+#### 設定motion為常駐服務 
 -----------------------------------------------------------------------------------------------------------
 
 ```
@@ -58,78 +62,76 @@ sudo nano /etc/default/motion
 ```
 motion檔內部參數 : 
 ```
-修改start_motion_daemon = yes
+start_motion_daemon = yes
 ```
 
-更改motion影像檔儲存路徑
+#### 更改motion影像檔
 -----------------------------------------------------------------------------------------------------------
 
 建立放置圖檔的新資料夾
 ```
 mkdir 存放圖檔資料夾名稱
-
 ```
 更改motion所屬群組
 ```
 Sudo  chgrp motion /home/pi/存放圖檔資料夾名稱
-
 ```
 更改放置motion圖檔資料夾的權限
 ```
 Sudo chmod -R 777存放圖檔資料夾名稱
 ```
-chmod 指令是用於改變檔案權限，權限設定可分為兩種 : 數字或符號，這邊以數字做為權限的變更 : 777分別為owner/group/others三種身份，每個身分擁有read/write/execute權限，每個權限的分數對照表如下：r:4 w:2 x:1，身分(owner/group/others)擁有三種權限(r/w/x)分數是皆以累加的方式，因此7=r(4)+w(2)+x(1)的意思是指這身分具有r/w/x權限。
+chmod 指令是用於改變檔案權限，權限設定可分為兩種 : 數字或符號，這邊以數字做為權限的變更 : 777分別為owner/group/others三種身份
+每個身分擁有read/write/execute權限，每個權限的分數對照表如下：r:4 w:2 x:1，身分(owner/group/others)擁有三種權限(r/w/x)分數
+是皆以累加的方式，因此7=r(4)+w(2)+x(1)的意思是指這身分具有r/w/x權限，詳細內容請參考[Linux 的檔案權限與目錄配置](http://linux.vbird.org/linux_basic/0210filepermission.php )
 
-http://linux.vbird.org/linux_basic/0210filepermission.php 
+#### 在motion .conf 設定檔修改預設路徑
+-----------------------------------------------------------------------------------------------------------
+```
+sudo nano /etc/motion/motion.conf
+```
+找到 target_dir : 設定儲存圖檔新路徑，一開始預設路徑為 /var/lib/motion，目前變更為/home/pi/motion
 
-(5.2) 在motion .conf 設定檔修改預設路徑
-
- sudo nano /etc/motion/motion.conf
-
- (5.2.1) 找到 target_dir : 設定儲存圖檔新路徑 
 
 ### 啟動/關閉motion服務
 
 啟動motion網路串流服務
-
-    sudo service motion start
-
+```
+sudo service motion start
+```
 關閉motion網路串流服務
-  
-    sudo service motion start
-
+```  
+sudo service motion start
+```
 ### 連線motion服務
 
 查詢raspberry pi IP 
+```
+Sudo ifconfig
+```
+至網站打上raspberry pi IP : 8081 
 
-    Sudo ifconfig
+## 測試結果
 
-至網站打上raspberry pi IP : 8081
+### 問題一: 重新開機後，再一次連線網站，出現灰色畫面
 
-1.3測試結果
+解決辦法 : 在/etc/modules 加上bcm2835-v4l2
 
-   (1)重新開機後，再一次連線網站，出現灰色畫面
+## 參考資料
 
-(1.1)	解決辦法 : 在/etc/init.d/motion 加上 sudo modprobe bcm2835-v4l2
+### motion設定教學
 
-1.4參考資料
+#### 中文說明
 
-(1)	motion設定教學
+[Raspberry Pi 安裝 Webcam 和 Motion Webcam Server](http://tekibrain.blogspot.tw/2013/05/raspberry-pi-webcam-motion-webcam-server.html)
+[Raspberry-pi-time-lapse-using-motion-and-webcam](https://blog.gtwang.org/iot/raspberry-pi/raspberry-pi-time-lapse-using-motion-and-webcam/ )
 
--Motion Guide
-http://htmlpreview.github.io/?https://github.com/Motion-Project/motion/blob/master/motion_guide.html#Install_Apt
--Motion Guide in git hub
-https://github.com/Motion-Project/motion 
--Build a Raspberry Pi Webcam Server in Minutes
-https://pimylifeup.com/raspberry-pi-webcam-server/ 
--How to use a Raspberry Pi to remotely watch your home
-http://www.techradar.com/how-to/computing/use-a-raspberry-pi-to-remotely-watch-your-home-1314466 
-   -Raspberry Pi 安裝 Webcam 和 Motion Webcam Server
-http://tekibrain.blogspot.tw/2013/05/raspberry-pi-webcam-motion-webcam-server.html 
+#### 英文說明
 
+[Build a Raspberry Pi Webcam Server in Minutes] (https://pimylifeup.com/raspberry-pi-webcam-server/) 
+[How to use a Raspberry Pi to remotely watch your home](http://www.techradar.com/how-to/computing/use-a-raspberry-pi-to-remotely-watch-your-home-1314466)
+[Lane Tech HS - PCL - Raspberry Pi Motion Activated Camera](https://www.hackster.io/daniel-jablonski/lane-tech-hs-pcl-raspberry-pi-motion-activated-camera-6de824)
 
-(2)	motion 更改權限
+### motion 更改權限
 https://raspberrypi.stackexchange.com/questions/12378/what-permissions-does-motion-require-to-write-to-specific-directory 
-                   
-https://raspberrypi.stackexchange.com/questions/27737/unable-to-open-video-device-and-grey-screen 
+             
 

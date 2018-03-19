@@ -9,7 +9,6 @@
 
 ### 啟動相機模組 : 
 
-#### 硬體設定
 
 開啟樹梅派設定: sudo raspi-config
    ![image](https://github.com/MrLiuLiuLiu/RaspberryPi/blob/master/%E5%95%9F%E5%8B%95%E7%9B%B8%E6%A9%9F%E6%A8%A1%E7%B5%84-%E6%AD%A5%E9%A9%9F%E5%9B%9B.png)
@@ -35,14 +34,15 @@
 
 ```raspistill -o output.jpg```
                
-  1.2軟體安裝
+## 軟體安裝
 
-(1)	在命令提示字列中安裝pi camera套件，網站中有提到兩種方式，進行安裝
-(1.1)直接以linux系統管理套件的指令 : 
-   		apt-get install python-picamera (套件名稱)，
-   (1.2)以Python管理套件的指令: 
-   		pip install picamera(套件名稱) 
-https://picamera.readthedocs.io/en/release-1.13/install.html 
+在命令提示字列中安裝pi camera套件，網站中有提到兩種方式，進行安裝
+
+### 直接以linux系統管理套件的指令 : 
+```apt-get install python-picamera (套件名稱)```   		
+### [以Python管理套件的指令](https://picamera.readthedocs.io/en/release-1.13/install.html): 
+```pip install picamera(套件名稱)```
+
 
   1.3 測試流程 : 
 

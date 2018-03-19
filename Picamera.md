@@ -13,19 +13,21 @@
    
 選擇第5項 : Interfacing Options 
 
+   ![image](https://github.com/MrLiuLiuLiu/RaspberryPi/blob/master/%E5%95%9F%E5%8B%95%E7%9B%B8%E6%A9%9F%E6%A8%A1%E7%B5%84-%E6%AD%A5%E9%A9%9F%E4%BA%8C.png)
+
 選擇 Pi Camera , 按下Enable
- 
 
- 
-(1.4)	選擇 Finish。
+   ![image](https://github.com/MrLiuLiuLiu/RaspberryPi/blob/master/%E5%95%9F%E5%8B%95%E7%9B%B8%E6%A9%9F%E6%A8%A1%E7%B5%84-%E6%AD%A5%E9%A9%9F%E4%B8%89.png)
+   
+   ![image](https://github.com/MrLiuLiuLiu/RaspberryPi/blob/master/%E5%95%9F%E5%8B%95%E7%9B%B8%E6%A9%9F%E6%A8%A1%E7%B5%84-%E6%AD%A5%E9%A9%9F%E5%9B%9B.png)
 
-         
+選擇 Finish
 
-       (2)測試相機模組:
-在樹梅派官網友介紹到Picamera 拍照、錄影及圖像相關參數設定的指令，這邊以Picamera 拍照的指令測試 Picamera 能否正常運作
-https://www.raspberrypi.org/documentation/usage/camera/raspicam/ 
+   ![image](https://github.com/MrLiuLiuLiu/RaspberryPi/blob/master/%E5%95%9F%E5%8B%95%E7%9B%B8%E6%A9%9F%E6%A8%A1%E7%B5%84-%E6%AD%A5%E9%A9%9F%E4%BA%94.png)
 
-         (2.1)命令提示列打上 : raspistill -o output.jpg
+### 測試相機模組 :
+
+在[樹梅派官網](https://www.raspberrypi.org/documentation/usage/camera/raspicam/ )有介紹到Picamera 拍照、錄影及圖像相關參數設定的指令，這邊以Picamera 拍照的指令測試 Picamera 能否正常運作
                
   1.2軟體安裝
 

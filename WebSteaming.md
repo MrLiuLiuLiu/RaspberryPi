@@ -81,8 +81,11 @@ Sudo  chgrp motion /home/pi/存放圖檔資料夾名稱
 Sudo chmod -R 777存放圖檔資料夾名稱
 ```
 chmod 指令是用於改變檔案權限，權限設定可分為兩種 : 數字或符號，這邊以數字做為權限的變更 : 
+
 777分別為owner/group/others三種身份每個身分擁有read/write/execute權限，每個權限的分數
+
 對照表如下：r:4 w:2 x:1，身分(owner/group/others)擁有三種權限(r/w/x)分數是皆以累加的方式，
+
 因此7=r(4)+w(2)+x(1)的意思是指這身分具有r/w/x權限，詳細內容請參考[Linux 的檔案權限與目錄配置](http://linux.vbird.org/linux_basic/0210filepermission.php )
 
 #### 在motion .conf 設定檔修改預設路徑

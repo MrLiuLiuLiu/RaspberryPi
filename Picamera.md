@@ -28,7 +28,11 @@
 ### 測試相機模組 :
 
 在[樹梅派官網](https://www.raspberrypi.org/documentation/usage/camera/raspicam/ )有介紹到Picamera 拍照、錄影及圖像相關參數設定的指令，這邊以Picamera 拍照的指令測試 Picamera 能否正常運作
-               
+
+命令提示列打上 : 
+
+‵‵‵ raspistill -o output.jpg ‵‵‵
+               
   1.2軟體安裝
 
 (1)	在命令提示字列中安裝pi camera套件，網站中有提到兩種方式，進行安裝

@@ -23,6 +23,7 @@ sudo apt-get install motion
 ### 設定motion服務
 
 修改motion .conf 設定檔參數
+-----------------------------------------------------------------------------------------------------------
 ```
 sudo nano /etc/motion/motion.conf
 ```
@@ -50,9 +51,10 @@ web_port 8081
 ```
 
 設定motion為常駐服務 
+-----------------------------------------------------------------------------------------------------------
 
 ```
-       sudo nano /etc/default/motion
+sudo nano /etc/default/motion
 ```
 motion檔內部參數 : 
 ```
@@ -60,26 +62,23 @@ motion檔內部參數 :
 ```
 
 更改motion影像檔儲存路徑
+-----------------------------------------------------------------------------------------------------------
 
+建立放置圖檔的新資料夾
 ```
-#建立放置圖檔的新資料夾
 mkdir 存放圖檔資料夾名稱
+
 ```
 更改motion所屬群組
+```
+Sudo  chgrp motion /home/pi/存放圖檔資料夾名稱
 
-    Sudo  chgrp motion /home/pi/存放圖檔資料夾名稱
-
-(5.3)更改放置motion圖檔資料夾的權限，
-
-    Sudo chmod -R 777存放圖檔資料夾名稱
-
-   			 -說明 : 
-              Chmod 指令是用於改變檔案權限，權限設定可分為兩種 : 數字 
-              或符號，這邊以數字做為權限的變更 : 777分別為owner/group/
-              others三種身份，每個身分擁有read/write/execute權限，每個  
-              權限的分數對照表如下：r:4w:2 x:1，身分(owner/group/others)
-              擁有三種權限(r/w/x)分數是皆以累加的方式，因此
-              7=r(4)+w(2)+x(1)的意思是指這身分具有r/w/x權限。
+```
+更改放置motion圖檔資料夾的權限
+```
+Sudo chmod -R 777存放圖檔資料夾名稱
+```
+chmod 指令是用於改變檔案權限，權限設定可分為兩種 : 數字或符號，這邊以數字做為權限的變更 : 777分別為owner/group/others三種身份，每個身分擁有read/write/execute權限，每個權限的分數對照表如下：r:4 w:2 x:1，身分(owner/group/others)擁有三種權限(r/w/x)分數是皆以累加的方式，因此7=r(4)+w(2)+x(1)的意思是指這身分具有r/w/x權限。
 
 http://linux.vbird.org/linux_basic/0210filepermission.php 
 
@@ -91,27 +90,21 @@ http://linux.vbird.org/linux_basic/0210filepermission.php
 
 ### 啟動/關閉motion服務
 
-
-(3.1)啟動motion網路串流服務
+啟動motion網路串流服務
 
     sudo service motion start
 
-(3.2)關閉motion網路串流服務
+關閉motion網路串流服務
   
     sudo service motion start
 
-(4)	連線motion服務
+### 連線motion服務
 
-(4.1)查詢raspberry pi IP 
+查詢raspberry pi IP 
 
     Sudo ifconfig
 
-(4.2)至網站打上raspberry pi IP : 8081
-
-
-
- 
-
+至網站打上raspberry pi IP : 8081
 
 1.3測試結果
 

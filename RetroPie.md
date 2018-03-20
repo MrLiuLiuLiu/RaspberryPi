@@ -13,9 +13,9 @@ RetroPie模擬器安裝方式這邊提供兩種流程:直接將RetroPie模擬器
 
 #### 操作流程
 
-Step1 :至[RetroPie官網](https://retropie.org.uk/download/)下載模擬器壓縮檔
+##### Step1 :至[RetroPie官網](https://retropie.org.uk/download/)下載模擬器壓縮檔
 
-Step2 :檔案解壓縮後，以[Win32DiskImager](https://sourceforge.net/projects/win32diskimager/)將解壓縮的模擬器映像檔寫入SD卡中
+##### Step2 :檔案解壓縮後，以[Win32DiskImager](https://sourceforge.net/projects/win32diskimager/)將解壓縮的模擬器映像檔寫入SD卡中
 
 #### 參考資料
 
@@ -27,9 +27,9 @@ Step2 :檔案解壓縮後，以[Win32DiskImager](https://sourceforge.net/project
 
 #### 操作流程
 
-#### Step1 : 開啟RESPBERRY 系統上的命令提示列
+##### Step1 : 開啟RESPBERRY 系統上的命令提示列
 
-#### Step2 : 依序打上下列指令 : 
+##### Step2 : 依序打上下列指令 : 
 --------------------------------------------
 
 RESPBERRY 系統更新
@@ -127,33 +127,34 @@ Windows 系統
 
 #### psx模擬器
 
-##### 將遊戲模擬器BIOS檔 : SCPH1001.BIN 放進BIOS資料夾中
-        (1.2)至RetroPie set-up選單，依序選擇configuration/tools >> Resetromsdir
-        (1.3)重新啟動樹莓派
+##### Step1 : 將遊戲模擬器BIOS檔 : SCPH1001.BIN 放進BIOS資料夾中
+##### Step2 : 至RetroPie set-up選單，依序選擇configuration/tools >> Resetromsdir
+##### Step3 : 重新啟動樹莓派
 
 #### 在遊戲畫面中啟用快捷鍵儲存
 
-使用快捷鍵儲存方式，需要先了解各項快捷鍵的預先設定
+在遊戲畫面中使用預設快捷鍵select+x呼叫Retroarch選單
 
-2.1操作方法
-    (1) 在遊戲畫面中使用預設快捷鍵select+x呼叫Retroarch選單
-2.2參考資料
+#### 參考資料
 (1) Solved memory card psx question:
 https://www.reddit.com/r/RetroPie/comments/6lyfa0/solved_memory_card_psx_question/?st=j7v5utn1&sh=d67956e7 
 
     (2) Changing the location of savefile directory
 https://www.reddit.com/r/RetroPie/comments/3dyki2/changing_the_location_of_savefile_directory_and/ 
 
-RetroPie遊戲金手指
+## RetroPie遊戲金手指
+
 在遊戲闖關過程中，也許會面臨卡關的情況，因此需要修改遊戲參數的金手指，以達成玩家對破關的需求，而RetroPie模擬器也提供金手指的功能，這邊以三個部分說明 : 一為遊戲金手指的下載，二為遊戲金手指參數檔的建立
 
-1.	遊戲金手指的下載
-1.1操作流程
+### 遊戲金手指的下載
+
+1.1
    (1) RetroPie 模擬器選單中選擇Retroarch進入 或者
       在遊戲畫面中使用預設快捷鍵select+x呼叫Retroarch選單
    (2) 進入Retroarch選單後，選擇Online Updater >> Update Cheats : 
       所有遊戲金手指參數檔皆放置 /opt/retropie/configs/all/retroarch/cheats
-2.	遊戲金手指的啟用
+      
+### 遊戲金手指的啟用
 2.1操作流程
 (1)在啟動的遊戲畫面中使用預設快捷鍵select+x呼叫Retroarch選單
 (2)依序選擇Quick Menu >> Cheats >> Load Cheat File

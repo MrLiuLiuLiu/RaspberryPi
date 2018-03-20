@@ -13,15 +13,15 @@ RetroPie模擬器安裝方式這邊提供兩種流程:直接將RetroPie模擬器
 
 #### 操作流程
 
-Step1 :至![RetroPie官網](https://retropie.org.uk/download/)下載模擬器壓縮檔
+Step1 :至[RetroPie官網](https://retropie.org.uk/download/)下載模擬器壓縮檔
 
-Step2 :檔案解壓縮後，以Win32DiskImager 將解壓縮的模擬器映像檔寫入SD卡中
+Step2 :檔案解壓縮後，以[Win32DiskImager](https://sourceforge.net/projects/win32diskimager/)將解壓縮的模擬器映像檔寫入SD卡中
 
 #### 參考資料
 
-![RetroPie軟硬體準備與初始安裝](https://3q.9527.tw/88)
+[RetroPie軟硬體準備與初始安裝](https://3q.9527.tw/88)
 
-![RetroPie First Installation](https://retropie.org.uk/docs/First-Installation/) 
+[RetroPie First Installation](https://retropie.org.uk/docs/First-Installation/) 
 
 ### 在已安裝RESPBERRY系統上安裝RetroPie模擬器
 
@@ -33,38 +33,38 @@ Step2 : 依序打上下列指令 :
 --------------------------------------------
 
 RESPBERRY 系統更新
-
-  		sudo apt-get update && sudo apt-get upgrade 
-
-  		(2.2)安裝RetroPie腳本設定需要的套件
-
-   		sudo apt-get install git lsb-release
-
-(2.3)下載最新版RetroPie腳本 : 
-
-         cd
-         git clone --depth=1 https://github.com/RetroPie/RetroPie-Setup.git
-
-    	(2.4)執行腳本 :
- 
-        cd RetroPie-Setup
-        chmod +x retropie_setup.sh
-        sudo ./retropie_setup.sh
-
-    	(2.5)安裝選擇
-
--完整安裝
+```
+sudo apt-get update && sudo apt-get upgrade 
+```
+安裝RetroPie腳本設定需要的套件
+```
+sudo apt-get install git lsb-release
+```
+下載最新版RetroPie腳本
+```
+ cd git clone --depth=1 https://github.com/RetroPie/RetroPie-Setup.git
+```
+執行腳本
+```
+cd RetroPie-Setup
+chmod +x retropie_setup.sh
+sudo ./retropie_setup.sh
+```
+Step3 :　安裝選擇
+--------------------------------------------
+完整安裝
 Manage Packages >> Quick Install
 
--自訂安裝
+自訂安裝
 Core Packages -Main / Optional / Experimental
 
+#### 參考資料
 
-2.2參考資料
-(1) RetroPie Manual-Installation : https://retropie.org.uk/docs/Manual-Installation/ 
+[RetroPie Manual-Installation](https://retropie.org.uk/docs/Manual-Installation/) 
 
-2.3測試結果
-(1)會出現下列連結顯示失敗的畫面 : https://www.raspberrypi.org/forums/viewtopic.php?f=66&p=1211557 
+#### 測試結果
+
+會出現下列連結顯示失敗的畫面 : https://www.raspberrypi.org/forums/viewtopic.php?f=66&p=1211557 
 
 RetroPie遊戲ROM檔之傳輸方式
 在進行遊戲ROM檔傳輸前，須先知道遊戲ROM檔放置資料夾的路徑，如下列說明:

@@ -26,32 +26,31 @@ Step2 :檔案解壓縮後，以[Win32DiskImager](https://sourceforge.net/project
 Step1 : 開啟RESPBERRY 系統上的命令提示列
 
 Step2 : 依序打上下列指令
---------------------------------------------
 
-RESPBERRY 系統更新
+-RESPBERRY 系統更新
 ```
 sudo apt-get update && sudo apt-get upgrade 
 ```
-安裝RetroPie腳本設定需要的套件
+-安裝RetroPie腳本設定需要的套件
 ```
 sudo apt-get install git lsb-release
 ```
-下載最新版RetroPie腳本
+-下載最新版RetroPie腳本
 ```
  cd git clone --depth=1 https://github.com/RetroPie/RetroPie-Setup.git
 ```
-執行腳本
+-執行腳本
 ```
 cd RetroPie-Setup
 chmod +x retropie_setup.sh
 sudo ./retropie_setup.sh
 ```
 Step3 :安裝選擇
---------------------------------------------
-完整安裝
+
+-完整安裝
 Manage Packages >> Quick Install
 
-自訂安裝
+-自訂安裝
 Core Packages -Main / Optional / Experimental
 
 #### 參考資料
@@ -86,17 +85,17 @@ Step5 : 再插回樹莓派之USB插槽，等待隨身碟的提示燈不再閃爍
 
 #### 在隨身碟上啟動遊戲ROM檔
 
- ##### Step1 : 進入RetroPie Setup Menu
+Step1 : 進入RetroPie Setup Menu
 
- ##### Step2 : 選擇RetroPie Setup Script 進行更新
+Step2 : 選擇RetroPie Setup Script 進行更新
 
- ##### Step3 : 選擇 Setup / Tools中usbromservice (USB ROM Service)重新啟動
+Step3 : 選擇 Setup / Tools中usbromservice (USB ROM Service)重新啟動
 
- ##### Step4 : 確認隨身碟儲存格式是否為FAT-32
+Step4 : 確認隨身碟儲存格式是否為FAT-32
 
- ##### Step5 : 在隨身碟中建立名稱為retropie-mount的資料夾
+Step5 : 在隨身碟中建立名稱為retropie-mount的資料夾
 
- ##### Step6 : 再次啟動樹莓派，此步驟會將RetroPie模擬器中資料夾的檔案與隨身碟資料夾的檔案同步
+Step6 : 再次啟動樹莓派，此步驟會將RetroPie模擬器中資料夾的檔案與隨身碟資料夾的檔案同步
 
 #### 參考資料
 
@@ -122,9 +121,9 @@ Step5 : 再插回樹莓派之USB插槽，等待隨身碟的提示燈不再閃爍
 
 #### psx模擬器
 
- ##### Step1 : 將遊戲模擬器BIOS檔 : SCPH1001.BIN 放進BIOS資料夾中
- ##### Step2 : 至RetroPie set-up選單，依序選擇configuration/tools >> Resetromsdir
- ##### Step3 : 重新啟動樹莓派
+Step1 : 將遊戲模擬器BIOS檔 : SCPH1001.BIN 放進BIOS資料夾中
+Step2 : 至RetroPie set-up選單，依序選擇configuration/tools >> Resetromsdir
+Step3 : 重新啟動樹莓派
 
 #### 在遊戲畫面中啟用快捷鍵儲存
 
@@ -142,27 +141,27 @@ Step5 : 再插回樹莓派之USB插槽，等待隨身碟的提示燈不再閃爍
 
 ### 遊戲金手指的下載
 
-#### RetroPie 模擬器選單中選擇Retroarch進入 或者在遊戲畫面中使用預設快捷鍵select+x呼叫Retroarch選單
+Step1 : RetroPie 模擬器選單中選擇Retroarch進入 或者在遊戲畫面中使用預設快捷鍵select+x呼叫Retroarch選單
 
-#### 進入Retroarch選單後，選擇Online Updater >> Update Cheats : 所有遊戲金手指參數檔皆放置 /opt/retropie/configs/all/retroarch/cheats
+Step2 : 進入Retroarch選單後，選擇Online Updater >> Update Cheats : 所有遊戲金手指參數檔皆放置 /opt/retropie/configs/all/retroarch/cheats
       
 ### 遊戲金手指的啟用
 
-#### 在啟動的遊戲畫面中使用預設快捷鍵select+x呼叫Retroarch選單
+Step1 : 在啟動的遊戲畫面中使用預設快捷鍵select+x呼叫Retroarch選單
 
-#### 依序選擇Quick Menu >> Cheats >> Load Cheat File
+Step2 : 依序選擇Quick Menu >> Cheats >> Load Cheat File
 
-#### 畫面底下會列出目前啟動的遊戲金手指參數，接著依據需求在每項金手指參數 ，按下左右鍵，決定啟用或不啟用(左為ON，右為OFF)
+Step3 : 畫面底下會列出目前啟動的遊戲金手指參數，接著依據需求在每項金手指參數 ，按下左右鍵，決定啟用或不啟用(左為ON，右為OFF)
 
-#### 選擇Apply Cheat Changes，然後按下按鍵  B 離開金手指設定選單，選擇 resume ，回到遊戲畫面，即可完成金手指的啟用步驟。
+Step4 : 選擇Apply Cheat Changes，然後按下按鍵  B 離開金手指設定選單，選擇 resume ，回到遊戲畫面，即可完成金手指的啟用步驟。
 
 ### 遊戲金手指參數檔的建立
 
-#### 至/opt/retropie/configs/all/retroarch/cheats/路徑下選擇要建立遊戲主機金手指 的資料夾
+Step1 : 至/opt/retropie/configs/all/retroarch/cheats/路徑下選擇要建立遊戲主機金手指 的資料夾
 
-#### 在建立遊戲主機金手指的資料夾下，建立一個為.cht檔的檔案
+Step2 : 在建立遊戲主機金手指的資料夾下，建立一個為.cht檔的檔案
 
-#### 遊戲主機金手指的參數格式請參照網址: https://retropie.org.uk/docs/Cheats/
+Step3 : 遊戲主機金手指的參數格式請參照網址: https://retropie.org.uk/docs/Cheats/
 
 ### 參考資料 
 

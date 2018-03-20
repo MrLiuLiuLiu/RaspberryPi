@@ -69,7 +69,11 @@ Core Packages -Main / Optional / Experimental
 
 ### USB隨身碟傳輸
 
-USB隨身碟傳輸分成兩種式進行，一是自動將隨身碟現有的遊戲ROM檔複製到SD卡的ROM資料夾，並從SD卡執行遊戲ROM檔，二是直接在隨身碟執行遊戲ROM檔。
+USB隨身碟傳輸分成兩種式進行 :　
+
+一是自動將隨身碟現有的遊戲ROM檔複製到SD卡的ROM資料夾，並從SD卡執行遊戲ROM檔
+
+二是直接在隨身碟執行遊戲ROM檔
 
 #### 從隨身碟自動複製遊戲ROM檔至SD卡
 

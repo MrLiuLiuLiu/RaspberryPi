@@ -74,11 +74,11 @@ mkdir 存放圖檔資料夾名稱
 ```
 更改motion所屬群組
 ```
-Sudo  chgrp motion /home/pi/存放圖檔資料夾名稱
+sudo  chgrp motion /home/pi/存放圖檔資料夾名稱
 ```
 更改放置motion圖檔資料夾的權限
 ```
-Sudo chmod -R 777存放圖檔資料夾名稱
+sudo chmod -R 777存放圖檔資料夾名稱
 ```
 chmod 指令是用於改變檔案權限，權限設定可分為兩種 : 數字或符號，這邊以數字做為權限的變更 : 
 
@@ -107,17 +107,21 @@ sudo service motion start
 ```
 ### 連線motion服務
 
-查詢raspberry pi IP 
+查詢raspberry pi IP，圖中紅色框框內的數字表示樹梅派的ip 
 ```
 sudo ifconfig
 ```
+
+![image](https://github.com/MrLiuLiuLiu/RaspberryPi/blob/master/Raspberry%20ip%20%E6%9F%A5%E8%A9%A2.png)
+
 至網站打上raspberry pi IP : 8081 
+
 
 ## 測試結果
 
 ### 問題一: 重新開機後，再一次連線網站，出現灰色畫面
 
-解決辦法 : 在/etc/modules 加上bcm2835-v4l2
+解決辦法 : 在/etc/modules 加上bcm2835-v4l2，參照[Lane Tech HS - PCL - Raspberry Pi Motion Activated Camera](https://www.hackster.io/daniel-jablonski/lane-tech-hs-pcl-raspberry-pi-motion-activated-camera-6de824)
 
 ## 參考資料
 
@@ -131,7 +135,7 @@ sudo ifconfig
 
 #### 英文說明
 
-[Build a Raspberry Pi Webcam Server in Minutes] (https://pimylifeup.com/raspberry-pi-webcam-server/)
+[Build a Raspberry Pi Webcam Server in Minutes](https://pimylifeup.com/raspberry-pi-webcam-server/)
 
 [How to use a Raspberry Pi to remotely watch your home](http://www.techradar.com/how-to/computing/use-a-raspberry-pi-to-remotely-watch-your-home-1314466)
 

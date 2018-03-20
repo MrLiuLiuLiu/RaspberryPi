@@ -2,30 +2,37 @@
 # 以樹莓派打造一台專屬的遊戲主機-使用Retropie
 
 ## Retropie 介紹
--------------------------------------------
+
 Retropie 是一套整合各家遊戲主機模擬器的開源系統，而且是以Linux核心建構的平台，因此，在使用的模擬器類型相容性高，支援的遊戲也多，操作方式則可以由命令列設定，使用彈性相對的大，適合中階進階者使用。
 
 ## Retropie模擬器安裝方式
--------------------------------------------
+
 RetroPie模擬器安裝方式這邊提供兩種流程:直接將RetroPie模擬器燒錄在SD卡上，以及在已安裝RESPBERRY 系統上安裝RetroPie模擬器。
 
 ### 直接將RetroPie模擬器燒錄在SD卡上
 
 #### 操作流程
-(1)至RetroPie官網下載模擬器壓縮檔https://retropie.org.uk/download/ 
-(2)檔案解壓縮後，以Win32DiskImager 將解壓縮的模擬器映像檔寫入SD卡中
+
+Step1 :至![RetroPie官網](https://retropie.org.uk/download/)下載模擬器壓縮檔
+
+Step2 :檔案解壓縮後，以Win32DiskImager 將解壓縮的模擬器映像檔寫入SD卡中
 
 #### 參考資料
-(1)RetroPie軟硬體準備與初始安裝 : https://3q.9527.tw/88
-(2)RetroPie First Installation : https://retropie.org.uk/docs/First-Installation/ 
 
+![RetroPie軟硬體準備與初始安裝](https://3q.9527.tw/88)
 
-2.	在已安裝RESPBERRY系統上安裝RetroPie模擬器
-2.1操作流程
-(1)開啟RESPBERRY 系統上的命令提示列
-(2)依序打上下列指令 : 
+![RetroPie First Installation](https://retropie.org.uk/docs/First-Installation/) 
 
-(2.1) RESPBERRY 系統更新
+### 在已安裝RESPBERRY系統上安裝RetroPie模擬器
+
+#### 操作流程
+
+Step1 : 開啟RESPBERRY 系統上的命令提示列
+
+Step2 : 依序打上下列指令 : 
+--------------------------------------------
+
+RESPBERRY 系統更新
 
   		sudo apt-get update && sudo apt-get upgrade 
 

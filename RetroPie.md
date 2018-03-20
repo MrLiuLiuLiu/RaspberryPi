@@ -11,13 +11,11 @@ RetroPie模擬器安裝方式這邊提供兩種流程:直接將RetroPie模擬器
 
 ### 直接將RetroPie模擬器燒錄在SD卡上
 
-#### 操作流程
+Step1 :至[RetroPie官網](https://retropie.org.uk/download/)下載模擬器壓縮檔
 
- ##### Step1 :至[RetroPie官網](https://retropie.org.uk/download/)下載模擬器壓縮檔
+Step2 :檔案解壓縮後，以[Win32DiskImager](https://sourceforge.net/projects/win32diskimager/)將解壓縮的模擬器映像檔寫入SD卡中
 
- ##### Step2 :檔案解壓縮後，以[Win32DiskImager](https://sourceforge.net/projects/win32diskimager/)將解壓縮的模擬器映像檔寫入SD卡中
-
-#### 參考資料
+### 參考資料
 
 [RetroPie軟硬體準備與初始安裝](https://3q.9527.tw/88)
 
@@ -25,11 +23,9 @@ RetroPie模擬器安裝方式這邊提供兩種流程:直接將RetroPie模擬器
 
 ### 在已安裝RESPBERRY系統上安裝RetroPie模擬器
 
-#### 操作流程
+Step1 : 開啟RESPBERRY 系統上的命令提示列
 
- ##### Step1 : 開啟RESPBERRY 系統上的命令提示列
-
- ##### Step2 : 依序打上下列指令 : 
+Step2 : 依序打上下列指令
 --------------------------------------------
 
 RESPBERRY 系統更新
@@ -50,7 +46,7 @@ cd RetroPie-Setup
 chmod +x retropie_setup.sh
 sudo ./retropie_setup.sh
 ```
-#### Step3 :安裝選擇
+Step3 :安裝選擇
 --------------------------------------------
 完整安裝
 Manage Packages >> Quick Install
@@ -78,16 +74,15 @@ USB隨身碟傳輸分成兩種式進行，一是自動將隨身碟現有的遊�
 
 #### 從隨身碟自動複製遊戲ROM檔至SD卡
 
+Step1 : 檢查隨身碟的儲存格式是否為FAT32
 
- ##### Step1 : 檢查隨身碟的儲存格式是否為FAT32
+Step2 : 在隨身碟建立一個資料夾，名稱為retropie
 
- ##### Step2 : 在隨身碟建立一個資料夾，名稱為retropie
+Step3 : 將隨身碟插置樹莓派之USB插槽，並等待隨身碟的提示燈不再閃爍，此步驟會將RetroPie模擬器的資料夾自動在隨身碟建立
 
- ##### Step3 : 將隨身碟插置樹莓派之USB插槽，並等待隨身碟的提示燈不再閃爍，此步驟會將RetroPie模擬器的資料夾自動在隨身碟建立
+Step4 : 拔除樹莓派上的隨身碟，並將其插至電腦USB插槽，開啟隨身碟，尋找名稱為ROM的資料夾，再把遊戲ROM檔放進此資料夾
 
- ##### Step4 : 拔除樹莓派上的隨身碟，並將其插至電腦USB插槽，開啟隨身碟，尋找名稱為ROM的資料夾，再把遊戲ROM檔放進此資料夾
-
- ##### Step5 : 再插回樹莓派之USB插槽，等待隨身碟的提示燈不再閃爍，此步驟會將ROM資料夾的遊戲ROM檔複製到SD卡中
+Step5 : 再插回樹莓派之USB插槽，等待隨身碟的提示燈不再閃爍，此步驟會將ROM資料夾的遊戲ROM檔複製到SD卡中
 
 #### 在隨身碟上啟動遊戲ROM檔
 

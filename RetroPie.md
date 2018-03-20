@@ -13,9 +13,9 @@ RetroPie模擬器安裝方式這邊提供兩種流程:直接將RetroPie模擬器
 
 #### 操作流程
 
-Step1 :至[RetroPie官網](https://retropie.org.uk/download/)下載模擬器壓縮檔
+##### Step1 :至[RetroPie官網](https://retropie.org.uk/download/)下載模擬器壓縮檔
 
-Step2 :檔案解壓縮後，以[Win32DiskImager](https://sourceforge.net/projects/win32diskimager/)將解壓縮的模擬器映像檔寫入SD卡中
+##### Step2 :檔案解壓縮後，以[Win32DiskImager](https://sourceforge.net/projects/win32diskimager/)將解壓縮的模擬器映像檔寫入SD卡中
 
 #### 參考資料
 
@@ -27,9 +27,9 @@ Step2 :檔案解壓縮後，以[Win32DiskImager](https://sourceforge.net/project
 
 #### 操作流程
 
-Step1 : 開啟RESPBERRY 系統上的命令提示列
+##### Step1 : 開啟RESPBERRY 系統上的命令提示列
 
-Step2 : 依序打上下列指令 : 
+##### Step2 : 依序打上下列指令 : 
 --------------------------------------------
 
 RESPBERRY 系統更新
@@ -50,7 +50,7 @@ cd RetroPie-Setup
 chmod +x retropie_setup.sh
 sudo ./retropie_setup.sh
 ```
-Step3 :　安裝選擇
+###### Step3 :　安裝選擇
 --------------------------------------------
 完整安裝
 Manage Packages >> Quick Install

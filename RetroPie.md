@@ -9,9 +9,8 @@ Retropie 是一套整合各家遊戲主機模擬器的開源系統，而且是�
 
 RetroPie模擬器安裝方式這邊提供兩種流程:
 
->  直接將RetroPie模擬器燒錄在SD卡上
-
->  在已安裝RESPBERRY 系統上安裝RetroPie模擬器
+-  直接將RetroPie模擬器燒錄在SD卡上
+-  在已安裝RESPBERRY 系統上安裝RetroPie模擬器
 
 ### 直接將RetroPie模擬器燒錄在SD卡上
 
@@ -31,27 +30,28 @@ RetroPie模擬器安裝方式這邊提供兩種流程:
 
 - Step2 : 依序打上下列指令
 
- RESPBERRY 系統更新
+   RESPBERRY 系統更新
 ```
-sudo apt-get update && sudo apt-get upgrade 
-```
- 
- 安裝RetroPie腳本設定需要的套件
-```
-sudo apt-get install git lsb-release
+   sudo apt-get update && sudo apt-get upgrade 
 ```
 
-  下載最新版RetroPie腳本
+   安裝RetroPie腳本設定需要的套件
 ```
- cd git clone --depth=1 https://github.com/RetroPie/RetroPie-Setup.git
+   sudo apt-get install git lsb-release
 ```
 
-  執行腳本
+   下載最新版RetroPie腳本
 ```
-cd RetroPie-Setup
-chmod +x retropie_setup.sh
-sudo ./retropie_setup.sh
+    cd git clone --depth=1 https://github.com/RetroPie/RetroPie-Setup.git
 ```
+
+   執行腳本
+```
+   cd RetroPie-Setup
+   chmod +x retropie_setup.sh
+   sudo ./retropie_setup.sh
+```
+
 - Step3 :安裝選擇
 
   完整安裝
@@ -80,35 +80,34 @@ sudo ./retropie_setup.sh
 
 USB隨身碟傳輸分成兩種式進行 :　
 
-> 一是自動將隨身碟現有的遊戲ROM檔複製到SD卡的ROM資料夾，並從SD卡執行遊戲ROM檔
-
-> 二是直接在隨身碟執行遊戲ROM檔
+- 自動將隨身碟現有的遊戲ROM檔複製到SD卡的ROM資料夾，並從SD卡執行遊戲ROM檔
+- 直接在隨身碟執行遊戲ROM檔
 
 #### 從隨身碟自動複製遊戲ROM檔至SD卡
 
-Step1 : 檢查隨身碟的儲存格式是否為FAT32
+- Step1 : 檢查隨身碟的儲存格式是否為FAT32
 
-Step2 : 在隨身碟建立一個資料夾，名稱為retropie
+- Step2 : 在隨身碟建立一個資料夾，名稱為retropie
 
-Step3 : 將隨身碟插置樹莓派之USB插槽，並等待隨身碟的提示燈不再閃爍，此步驟會將RetroPie模擬器的資料夾自動在隨身碟建立
+- Step3 : 將隨身碟插置樹莓派之USB插槽，並等待隨身碟的提示燈不再閃爍，此步驟會將RetroPie模擬器的資料夾自動在隨身碟建立
 
-Step4 : 拔除樹莓派上的隨身碟，並將其插至電腦USB插槽，開啟隨身碟，尋找名稱為ROM的資料夾，再把遊戲ROM檔放進此資料夾
+- Step4 : 拔除樹莓派上的隨身碟，並將其插至電腦USB插槽，開啟隨身碟，尋找名稱為ROM的資料夾，再把遊戲ROM檔放進此資料夾
 
-Step5 : 再插回樹莓派之USB插槽，等待隨身碟的提示燈不再閃爍，此步驟會將ROM資料夾的遊戲ROM檔複製到SD卡中
+- Step5 : 再插回樹莓派之USB插槽，等待隨身碟的提示燈不再閃爍，此步驟會將ROM資料夾的遊戲ROM檔複製到SD卡中
 
 #### 在隨身碟上啟動遊戲ROM檔
 
-Step1 : 進入RetroPie Setup Menu
+- Step1 : 進入RetroPie Setup Menu
 
-Step2 : 選擇RetroPie Setup Script 進行更新
+- Step2 : 選擇RetroPie Setup Script 進行更新
 
-Step3 : 選擇 Setup / Tools中usbromservice (USB ROM Service)重新啟動
+- Step3 : 選擇 Setup / Tools中usbromservice (USB ROM Service)重新啟動
 
-Step4 : 確認隨身碟儲存格式是否為FAT-32
+- Step4 : 確認隨身碟儲存格式是否為FAT-32
 
-Step5 : 在隨身碟中建立名稱為retropie-mount的資料夾
+- Step5 : 在隨身碟中建立名稱為retropie-mount的資料夾
 
-Step6 : 再次啟動樹莓派，此步驟會將RetroPie模擬器中資料夾的檔案與隨身碟資料夾的檔案同步
+- Step6 : 再次啟動樹莓派，此步驟會將RetroPie模擬器中資料夾的檔案與隨身碟資料夾的檔案同步
 
 #### 參考資料
 
@@ -134,9 +133,11 @@ Step6 : 再次啟動樹莓派，此步驟會將RetroPie模擬器中資料夾的�
 
 #### psx模擬器
 
-Step1 : 將遊戲模擬器BIOS檔 : SCPH1001.BIN 放進BIOS資料夾中
-Step2 : 至RetroPie set-up選單，依序選擇configuration/tools >> Resetromsdir
-Step3 : 重新啟動樹莓派
+- Step1 : 將遊戲模擬器BIOS檔 : SCPH1001.BIN 放進BIOS資料夾中
+
+- Step2 : 至RetroPie set-up選單，依序選擇configuration/tools >> Resetromsdir
+
+- Step3 : 重新啟動樹莓派
 
 #### 在遊戲畫面中啟用快捷鍵儲存
 
@@ -150,7 +151,12 @@ Step3 : 重新啟動樹莓派
 
 ## RetroPie遊戲金手指
 
-在遊戲闖關過程中，也許會面臨卡關的情況，因此需要修改遊戲參數的金手指，以達成玩家對破關的需求，而RetroPie模擬器也提供金手指的功能，這邊以三個部分說明 : 一為遊戲金手指的下載，二為遊戲金手指參數檔的建立
+在遊戲闖關過程中，也許會面臨卡關的情況，因此需要修改遊戲參數的金手指，以達成玩家對破關的需求，而RetroPie模擬器也提供金手指的功能
+
+這邊以三個部分說明 : 
+
+- 一為遊戲金手指的下載
+- 二為遊戲金手指參數檔的建立
 
 ### 遊戲金手指的下載
 

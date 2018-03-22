@@ -8,7 +8,9 @@ Retropie 是一套整合各家遊戲主機模擬器的開源系統，而且是�
 ## Retropie模擬器安裝方式
 
 RetroPie模擬器安裝方式這邊提供兩種流程:
+
 >  直接將RetroPie模擬器燒錄在SD卡上
+
 >  在已安裝RESPBERRY 系統上安裝RetroPie模擬器
 
 ### 直接將RetroPie模擬器燒錄在SD卡上

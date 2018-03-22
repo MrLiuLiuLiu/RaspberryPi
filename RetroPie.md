@@ -7,13 +7,15 @@ Retropie 是一套整合各家遊戲主機模擬器的開源系統，而且是�
 
 ## Retropie模擬器安裝方式
 
-RetroPie模擬器安裝方式這邊提供兩種流程:直接將RetroPie模擬器燒錄在SD卡上，以及在已安裝RESPBERRY 系統上安裝RetroPie模擬器。
+> RetroPie模擬器安裝方式這邊提供兩種流程:
+> 直接將RetroPie模擬器燒錄在SD卡上
+> 在已安裝RESPBERRY 系統上安裝RetroPie模擬器
 
 ### 直接將RetroPie模擬器燒錄在SD卡上
 
-Step1 :至[RetroPie官網](https://retropie.org.uk/download/)下載模擬器壓縮檔
+- Step1 :至[RetroPie官網](https://retropie.org.uk/download/)下載模擬器壓縮檔
 
-Step2 :檔案解壓縮後，以[Win32DiskImager](https://sourceforge.net/projects/win32diskimager/)將解壓縮的模擬器映像檔寫入SD卡中
+- Step2 :檔案解壓縮後，以[Win32DiskImager](https://sourceforge.net/projects/win32diskimager/)將解壓縮的模擬器映像檔寫入SD卡中
 
 ### 參考資料
 

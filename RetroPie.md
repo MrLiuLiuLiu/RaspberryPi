@@ -16,6 +16,7 @@ RetroPie模擬器安裝方式這邊提供兩種流程:
 --------------------------------------------
 
 - Step1 :至[RetroPie官網](https://retropie.org.uk/download/)下載模擬器壓縮檔
+
 - Step2 :檔案解壓縮後，以[Win32DiskImager](https://sourceforge.net/projects/win32diskimager/)將解壓縮的模擬器映像檔寫入SD卡中
 
 ### 參考資料
@@ -165,6 +166,7 @@ USB隨身碟傳輸分成兩種式進行 :　
 --------------------
 
 - Step1 : RetroPie 模擬器選單中選擇Retroarch進入 或者在遊戲畫面中使用預設快捷鍵select+x呼叫Retroarch選單
+
 - Step2 : 進入Retroarch選單後，選擇Online Updater >> Update Cheats : 所有遊戲金手指參數檔皆放置 
                               /opt/retropie/configs/all/retroarch/cheats
       
@@ -172,14 +174,19 @@ USB隨身碟傳輸分成兩種式進行 :　
 --------------------
 
 - Step1 : 在啟動的遊戲畫面中使用預設快捷鍵select+x呼叫Retroarch選單
+
 - Step2 : 依序選擇Quick Menu >> Cheats >> Load Cheat File
+
 - Step3 : 畫面底下會列出目前啟動的遊戲金手指參數，接著依據需求在每項金手指參數 ，按下左右鍵，決定啟用或不啟用(左為ON，右為OFF)
+
 - Step4 : 選擇Apply Cheat Changes，然後按下按鍵  B 離開金手指設定選單，選擇 resume ，回到遊戲畫面，即可完成金手指的啟用步驟。
 
 ### 遊戲金手指參數檔的建立
 
-- Step1 : 至/opt/retropie/configs/all/retroarch/cheats/路徑下選擇要建立遊戲主機金手指 的資料夾
+- Step1 : 至/opt/retropie/configs/all/retroarch/cheats/路徑下選擇要建立遊戲主機金手指的資料夾
+
 - Step2 : 在建立遊戲主機金手指的資料夾下，建立一個為.cht檔的檔案
+
 - Step3 : 遊戲主機金手指的參數格式請參照網址: https://retropie.org.uk/docs/Cheats/
 
 ### 參考資料 

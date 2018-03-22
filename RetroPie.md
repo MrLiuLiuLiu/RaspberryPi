@@ -25,34 +25,36 @@ Retropie 是一套整合各家遊戲主機模擬器的開源系統，而且是�
 
 ### 在已安裝RESPBERRY系統上安裝RetroPie模擬器
 
-Step1 : 開啟RESPBERRY 系統上的命令提示列
+- Step1 : 開啟RESPBERRY 系統上的命令提示列
 
-Step2 : 依序打上下列指令
+- Step2 : 依序打上下列指令
 
--RESPBERRY 系統更新
+  RESPBERRY 系統更新
 ```
 sudo apt-get update && sudo apt-get upgrade 
 ```
--安裝RetroPie腳本設定需要的套件
+  安裝RetroPie腳本設定需要的套件
 ```
 sudo apt-get install git lsb-release
 ```
--下載最新版RetroPie腳本
+  下載最新版RetroPie腳本
 ```
  cd git clone --depth=1 https://github.com/RetroPie/RetroPie-Setup.git
 ```
--執行腳本
+  執行腳本
 ```
 cd RetroPie-Setup
 chmod +x retropie_setup.sh
 sudo ./retropie_setup.sh
 ```
-Step3 :安裝選擇
+- Step3 :安裝選擇
 
--完整安裝
+  完整安裝
+  
 Manage Packages >> Quick Install
 
--自訂安裝
+  自訂安裝
+  
 Core Packages -Main / Optional / Experimental
 
 #### 參考資料

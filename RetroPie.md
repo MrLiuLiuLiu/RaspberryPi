@@ -166,8 +166,7 @@ USB隨身碟傳輸分成兩種式進行 :　
 
 - Step1 : RetroPie 模擬器選單中選擇Retroarch進入 或者在遊戲畫面中使用預設快捷鍵select+x呼叫Retroarch選單
 - Step2 : 進入Retroarch選單後，選擇Online Updater >> Update Cheats : 所有遊戲金手指參數檔皆放置 
-          
-          /opt/retropie/configs/all/retroarch/cheats
+                              /opt/retropie/configs/all/retroarch/cheats
       
 ### 遊戲金手指的啟用
 --------------------

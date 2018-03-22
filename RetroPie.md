@@ -13,9 +13,9 @@ RetroPie模擬器安裝方式這邊提供兩種流程:
 -  在已安裝RESPBERRY 系統上安裝RetroPie模擬器
 
 ### 直接將RetroPie模擬器燒錄在SD卡上
+--------------------------------------------
 
 - Step1 :至[RetroPie官網](https://retropie.org.uk/download/)下載模擬器壓縮檔
-
 - Step2 :檔案解壓縮後，以[Win32DiskImager](https://sourceforge.net/projects/win32diskimager/)將解壓縮的模擬器映像檔寫入SD卡中
 
 ### 參考資料
@@ -25,14 +25,15 @@ RetroPie模擬器安裝方式這邊提供兩種流程:
 [RetroPie First Installation](https://retropie.org.uk/docs/First-Installation/) 
 
 ### 在已安裝RESPBERRY系統上安裝RetroPie模擬器
+--------------------------------------------
 
 - Step1 : 開啟RESPBERRY 系統上的命令提示列
-
 - Step2 : 依序打上下列指令
 
    RESPBERRY 系統更新
 ```
    sudo apt-get update && sudo apt-get upgrade 
+   
 ```
 
    安裝RetroPie腳本設定需要的套件
@@ -77,6 +78,7 @@ RetroPie模擬器安裝方式這邊提供兩種流程:
 遊戲目錄結構 : \\retropie\roms\各遊戲主機平台\遊戲ROM檔
 
 ### USB隨身碟傳輸
+-------------------------------------
 
 USB隨身碟傳輸分成兩種式進行 :　
 
@@ -116,12 +118,11 @@ USB隨身碟傳輸分成兩種式進行 :　
 [在隨身碟上啟動遊戲ROM檔操作說明](https://github.com/retropie/retropie-setup/wiki/Running-ROMs-from-a-USB-drive) 
 
 ### Samba 分享
+--------------------------------------
 
 #### 利用網路分享的方式進行遊戲ROM檔的管理
 
-在Windows 系統的電腦資料夾路徑欄位打上\\RETROPIE
-
-即可在網路共用的視窗存取RetroPie模擬器的資料夾，前提是電腦要與樹莓派連上線，才能夠在電腦上將遊戲ROM檔案傳輸至RetroPie模擬器的資料夾中。
+在Windows 系統的電腦資料夾路徑欄位打上\\RETROPIE，即可在網路共用的視窗存取RetroPie模擬器的資料夾，前提是電腦要與樹莓派連上線，才能夠在電腦上將遊戲ROM檔案傳輸至RetroPie模擬器的資料夾中。
 
 #### 參考資料
 
@@ -130,6 +131,7 @@ USB隨身碟傳輸分成兩種式進行 :　
 ## RetroPie遊戲進度之存檔方式
 
 ### 照遊戲主機的存檔方式儲存
+-----------------------------------------
 
 #### psx模擬器
 
@@ -139,7 +141,8 @@ USB隨身碟傳輸分成兩種式進行 :　
 
 - Step3 : 重新啟動樹莓派
 
-#### 在遊戲畫面中啟用快捷鍵儲存
+### 在遊戲畫面中啟用快捷鍵儲存
+---------------------------------------
 
 使用預設快捷鍵select+x呼叫Retroarch選單
 
@@ -159,27 +162,25 @@ USB隨身碟傳輸分成兩種式進行 :　
 - 二為遊戲金手指參數檔的建立
 
 ### 遊戲金手指的下載
+--------------------
 
 - Step1 : RetroPie 模擬器選單中選擇Retroarch進入 或者在遊戲畫面中使用預設快捷鍵select+x呼叫Retroarch選單
-
-- Step2 : 進入Retroarch選單後，選擇Online Updater >> Update Cheats : 所有遊戲金手指參數檔皆放置 /opt/retropie/configs/all/retroarch/cheats
+- Step2 : 進入Retroarch選單後，選擇Online Updater >> Update Cheats : 所有遊戲金手指參數檔皆放置 
+          
+          /opt/retropie/configs/all/retroarch/cheats
       
 ### 遊戲金手指的啟用
+--------------------
 
 - Step1 : 在啟動的遊戲畫面中使用預設快捷鍵select+x呼叫Retroarch選單
-
 - Step2 : 依序選擇Quick Menu >> Cheats >> Load Cheat File
-
 - Step3 : 畫面底下會列出目前啟動的遊戲金手指參數，接著依據需求在每項金手指參數 ，按下左右鍵，決定啟用或不啟用(左為ON，右為OFF)
-
 - Step4 : 選擇Apply Cheat Changes，然後按下按鍵  B 離開金手指設定選單，選擇 resume ，回到遊戲畫面，即可完成金手指的啟用步驟。
 
 ### 遊戲金手指參數檔的建立
 
 - Step1 : 至/opt/retropie/configs/all/retroarch/cheats/路徑下選擇要建立遊戲主機金手指 的資料夾
-
 - Step2 : 在建立遊戲主機金手指的資料夾下，建立一個為.cht檔的檔案
-
 - Step3 : 遊戲主機金手指的參數格式請參照網址: https://retropie.org.uk/docs/Cheats/
 
 ### 參考資料 

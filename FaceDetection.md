@@ -88,7 +88,7 @@
 
 - [Creating your own Haar Cascade OpenCV Python Tutorial](https://pythonprogramming.net/haar-cascade-object-detection-python-opencv-tutorial/) : 
 
-本專案參考此程式作為練習Haa-like特徵分類器的操作，並使用單一正面圖像樣本進行訓練。
+本專案參考此程式作為練習Haa-like特徵分類器的操作，並使用單一正面圖像樣本進行訓練
 
 - [Tutorial: OpenCV haartraining (Rapid Object Detection With A Cascade of Boosted Classifiers Based on Haar-like Features](http://note.sonots.com/SciSoftware/haartraining.html#v6f077ba) : 
 

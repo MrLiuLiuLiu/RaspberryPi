@@ -9,6 +9,8 @@
 2. 使用opencv 中具備人臉偵測功能的程式庫，對相機接收的影像進行人臉偵測 
 
 3. 把偵測人臉的結果顯示在螢幕上
+
+![image](https://github.com/MrLiuLiuLiu/RaspberryPi/blob/master/RaspberryPi%E4%BA%BA%E8%87%89%E5%81%B5%E6%B8%AC%E9%81%8B%E4%BD%9C%E6%9E%B6%E6%A7%8B.png)
  
 ## 工作原理
 

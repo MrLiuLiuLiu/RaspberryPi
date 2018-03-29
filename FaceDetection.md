@@ -51,7 +51,7 @@
 
 一開始將特徵(feature)分成好幾個classifier。最前面的classier辨識率最低，但是可以先篩選掉不是人臉的圖片；接下來的Classier處理比較難篩選掉的圖片依此類推，直到最後一個classier為止，留下來的就會是確定有人臉的照片。
 
-## 實作演練
+## 實作教學
 
 ### 人臉偵測
 
@@ -63,7 +63,7 @@
     /home/pi/opencv-3.0.0/data/haarcascades/haarcascade_frontalface_alt.xml'
 ```
 
-#### 參考教學
+#### 參考資料
 
 - 靜態辨識 : 透過Picamera鏡頭拍攝圖像後，人臉辨識結果以圖片方式呈現，程式碼參照[OpenCV with Raspberry Pi Camera Face Detection Tutorial](https://pythonprogramming.net/raspberry-pi-camera-opencv-face-detection-tutorial/) 
 
@@ -82,7 +82,7 @@
 
 ![image](https://github.com/MrLiuLiuLiu/RaspberryPi/blob/master/Haa-like%E7%89%B9%E5%BE%B5%E5%88%86%E9%A1%9E%E5%99%A8%E8%A8%93%E7%B7%B4%E6%B5%81%E7%A8%8B.png)
 
-#### 參考教學
+#### 參考資料
 
 ##### 英文
 

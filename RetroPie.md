@@ -9,9 +9,6 @@ Retropie 是一套整合各家遊戲主機模擬器的開源系統，而且是�
 
 RetroPie模擬器安裝方式這邊提供兩種流程:
 
--  直接將RetroPie模擬器燒錄在SD卡上
--  在已安裝RESPBERRY 系統上安裝RetroPie模擬器
-
 ### 直接將RetroPie模擬器燒錄在SD卡上
 --------------------------------------------
 
@@ -31,23 +28,23 @@ RetroPie模擬器安裝方式這邊提供兩種流程:
 - Step1 : 開啟RESPBERRY 系統上的命令提示列
 - Step2 : 依序打上下列指令
 
-   RESPBERRY 系統更新
+RESPBERRY 系統更新
 ```
    sudo apt-get update && sudo apt-get upgrade 
    
 ```
 
-   安裝RetroPie腳本設定需要的套件
+安裝RetroPie腳本設定需要的套件
 ```
    sudo apt-get install git lsb-release
 ```
 
-   下載最新版RetroPie腳本
+下載最新版RetroPie腳本
 ```
     cd git clone --depth=1 https://github.com/RetroPie/RetroPie-Setup.git
 ```
 
-   執行腳本
+執行腳本
 ```
    cd RetroPie-Setup
    chmod +x retropie_setup.sh
@@ -82,9 +79,6 @@ RetroPie模擬器安裝方式這邊提供兩種流程:
 -------------------------------------
 
 USB隨身碟傳輸分成兩種式進行 :　
-
-- 自動將隨身碟現有的遊戲ROM檔複製到SD卡的ROM資料夾，並從SD卡執行遊戲ROM檔
-- 直接在隨身碟執行遊戲ROM檔
 
 #### 從隨身碟自動複製遊戲ROM檔至SD卡
 
@@ -164,9 +158,6 @@ USB隨身碟傳輸分成兩種式進行 :　
 在遊戲闖關過程中，也許會面臨卡關的情況，因此需要修改遊戲參數的金手指，以達成玩家對破關的需求，而RetroPie模擬器也提供金手指的功能
 
 這邊以三個部分說明 : 
-
-- 一為遊戲金手指的下載
-- 二為遊戲金手指參數檔的建立
 
 ### 遊戲金手指的下載
 --------------------

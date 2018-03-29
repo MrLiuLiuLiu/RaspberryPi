@@ -23,7 +23,7 @@
 圖片來源為:[Vision based interface system for hands free control of an intelligent wheelchair](https://link.springer.com/article/10.1186/1743-0003-6-33#Fig4)
 ![image](https://media.springernature.com/original/springer-static/image/art%3A10.1186%2F1743-0003-6-33/MediaObjects/12984_2008_Article_193_Fig4_HTML.jpg) 
 
-### 使用Haar-like特徵檢測人臉特徵，並使用積分圖加快對Haar-like特徵求值的速度
+### 使用Haar-like特徵檢測人臉特徵，並加入積分圖提高對Haar-like特徵求值的速度
 
 詳細說明參照[Haar+Adaboost级联分类器分解](https://blog.csdn.net/lijihw_1022/article/details/51374073) : 
 
@@ -46,11 +46,11 @@
   
 - 將訓練得到的弱分類器组合成強分類器 : 各個弱分類器的訓練過程結束後，會提高分類誤差率小的弱分類器權重，降低分類誤差率大的弱分類器權重。 
 
-### 加入Cascade Classifier把強分類器級聯一起，提高人臉辨識的準確率
+### 使用Cascade Classifier把強分類器級聯一起，提高人臉辨識的準確率
 
 一開始將特徵(feature)分成好幾個classifier。最前面的classier辨識率最低，但是可以先篩選掉不是人臉的圖片；接下來的Classier處理比較難篩選掉的圖片依此類推，直到最後一個classier為止，留下來的就會是確定有人臉的照片。
 
-## 實際操作
+## 實作演練
 
 ### 人臉偵測
 
@@ -62,5 +62,36 @@
 2.	靜態辨識 : 透過Picamera鏡頭拍攝圖像後，人臉辨識結果以圖片方式呈現，程式碼參照[OpenCV with Raspberry Pi Camera Face Detection Tutorial](https://pythonprogramming.net/raspberry-pi-camera-opencv-face-detection-tutorial/) 
 
 3.	動態辨識 : 透過Picamera鏡頭以錄影方式，進行人臉辨識，程式碼參照[Raspberry-Pi-Camera-Face-Detection-Python](https://github.com/AsankaD7/Raspberry-Pi-Camera-Face-Detection-Python/blob/master/faceDetectPiVideo.py) 
+
+### Haar-like特徵分類器訓練
+
+
+#### 流程介紹
+
+分類器訓練分的實作流程如下，大致分為三個重點 : 
+
+- 資料準備 : 需要正面圖像樣本與負面圖像樣本
+- 創建樣本 : 目的是為產生正圖像特徵向量的文件.vec檔
+- 訓練樣本 : 以opencv_traincascade 指令進行樣本的訓練
+
+![image](https://github.com/MrLiuLiuLiu/RaspberryPi/blob/master/Haa-like%E7%89%B9%E5%BE%B5%E5%88%86%E9%A1%9E%E5%99%A8%E8%A8%93%E7%B7%B4%E6%B5%81%E7%A8%8B.png)
+
+#### 教學參考
+
+
+
+英文 : 
+
+
+
+
+中文 : 有說明以多重測試樣本的
+
+                                                                                                                                                                                                           
+
+
+
+
+
  
 

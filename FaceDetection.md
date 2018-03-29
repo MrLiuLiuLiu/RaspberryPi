@@ -14,10 +14,12 @@
  
 ## 工作原理
 
-臉部偵測(Face Detection)基本作法是先做特徵擷取(Feature Extraction)，接著偵測檢查特徵(Cascade Detection)，進行特徵部位的辨識，如眼睛、耳朵、鼻子、眉毛、臉型。本專案使用的OpenCV人臉偵測演算法，是採用Paul Viola與Michael Jones發表的Robust Real-Time Face Detection實現，該演算法分為三個部分 :
- 
-https://link.springer.com/article/10.1186/1743-0003-6-33#Fig4 
-https://hub.packtpub.com/implementing-face-detection-using-haar-cascades-adaboost-algorithm/ 
+臉部偵測(Face Detection)基本作法是先做特徵擷取(Feature Extraction)，接著偵測檢查特徵(Cascade Detection)，進行特徵部位的辨識，如眼睛、耳朵、鼻子、臉型。
+
+本專案使用的OpenCV人臉偵測演算法，是採用Paul Viola與Michael Jones發表的Robust Real-Time Face Detection實現，圖示為人臉偵測演算法的架構，由三個部分組成，詳細說明參照![Implementing face detection using the Haar Cascades and AdaBoost algorithm](https://hub.packtpub.com/implementing-face-detection-using-haar-cascades-adaboost-algorithm/)，圖片來源為:![Vision based interface system for hands free control of an intelligent wheelchair](https://link.springer.com/article/10.1186/1743-0003-6-33#Fig4)
+![image](https://media.springernature.com/original/springer-static/image/art%3A10.1186%2F1743-0003-6-33/MediaObjects/12984_2008_Article_193_Fig4_HTML.jpg) 
+
+
 AdaBoost人脸检测原理
 https://blog.csdn.net/atpccb/article/details/51210162 
 

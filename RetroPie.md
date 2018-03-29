@@ -7,20 +7,12 @@ Retropie 是一套整合各家遊戲主機模擬器的開源系統，而且是�
 
 ## Retropie模擬器安裝方式
 
-
 ### 直接將RetroPie模擬器燒錄在SD卡上
 --------------------------------------------
 
 - Step1 :至[RetroPie官網](https://retropie.org.uk/download/)下載模擬器壓縮檔
 
 - Step2 :檔案解壓縮後，以[Win32DiskImager](https://sourceforge.net/projects/win32diskimager/)將解壓縮的模擬器映像檔寫入SD卡中
-
-### 參考資料
-
-[RetroPie軟硬體準備與初始安裝](https://3q.9527.tw/88)
-
-[RetroPie First Installation](https://retropie.org.uk/docs/First-Installation/) 
-
 
 ### 在已安裝RESPBERRY系統上安裝RetroPie模擬器
 --------------------------------------------
@@ -61,14 +53,9 @@ RESPBERRY 系統更新
   
   Core Packages -Main / Optional / Experimental
 
-### 參考資料
-
-[RetroPie Manual-Installation](https://retropie.org.uk/docs/Manual-Installation/) 
-
 ### 測試結果
 
 會出現下列連結顯示失敗的畫面 : https://www.raspberrypi.org/forums/viewtopic.php?f=66&p=1211557 
-
 
 ## RetroPie遊戲ROM檔之傳輸方式
 
@@ -105,23 +92,12 @@ RESPBERRY 系統更新
 
 - Step6 : 再次啟動樹莓派，此步驟會將RetroPie模擬器中資料夾的檔案與隨身碟資料夾的檔案同步
 
-#### 參考資料
-
-[從隨身碟自動複製遊戲ROM檔至SD卡操作說明](https://3q.9527.tw/90)
-
-[在隨身碟上啟動遊戲ROM檔操作說明](https://github.com/retropie/retropie-setup/wiki/Running-ROMs-from-a-USB-drive) 
-
-
 ### Samba 分享
 --------------------------------------
 
 #### 利用網路分享的方式進行遊戲ROM檔的管理
 
 在Windows 系統的電腦資料夾路徑欄位打上\\RETROPIE，即可在網路共用的視窗存取RetroPie模擬器的資料夾，前提是電腦要與樹莓派連上線，才能夠在電腦上將遊戲ROM檔案傳輸至RetroPie模擬器的資料夾中。
-
-#### 參考資料
-
-[Transferring Roms with Samba Share](https://github.com/retropie/retropie-setup/wiki/Transferring-Roms) 
 
 ## RetroPie遊戲進度之存檔方式
 
@@ -140,13 +116,6 @@ RESPBERRY 系統更新
 ---------------------------------------
 
 使用預設快捷鍵select+x呼叫Retroarch選單
-
-#### 參考資料
-
-[Solved memory card psx question](https://www.reddit.com/r/RetroPie/comments/6lyfa0/solved_memory_card_psx_question/?st=j7v5utn1&sh=d67956e7)
-
-[Changing the location of savefile directory](https://www.reddit.com/r/RetroPie/comments/3dyki2/changing_the_location_of_savefile_directory_and/) 
-
 
 ## RetroPie遊戲金手指
 
@@ -180,7 +149,23 @@ RESPBERRY 系統更新
 
 - Step3 : 遊戲主機金手指的參數格式請參照網址: https://retropie.org.uk/docs/Cheats/
 
-### 參考資料 
+## 參考資料
 
-https://www.reddit.com/r/RetroPie/comments/4ceyty/you_cant_get_cheats_to_work_well_heres_how/?st=j7v6dzmd&sh=f09316a4 
+### Retropie模擬器安裝方式 
+
+- [RetroPie軟硬體準備與初始安裝](https://3q.9527.tw/88)
+- [RetroPie First Installation](https://retropie.org.uk/docs/First-Installation/) 
+- [RetroPie Manual-Installation](https://retropie.org.uk/docs/Manual-Installation/) 
+
+### RetroPie遊戲ROM檔之傳輸方式
+
+- [從隨身碟自動複製遊戲ROM檔至SD卡操作說明](https://3q.9527.tw/90)
+- [在隨身碟上啟動遊戲ROM檔操作說明](https://github.com/retropie/retropie-setup/wiki/Running-ROMs-from-a-USB-drive) 
+- [Transferring Roms with Samba Share](https://github.com/retropie/retropie-setup/wiki/Transferring-Roms) 
+
+### RetroPie遊戲金手指
+
+- [Solved memory card psx question](https://www.reddit.com/r/RetroPie/comments/6lyfa0/solved_memory_card_psx_question/?st=j7v5utn1&sh=d67956e7)
+- [Changing the location of savefile directory](https://www.reddit.com/r/RetroPie/comments/3dyki2/changing_the_location_of_savefile_directory_and/) 
+- https://www.reddit.com/r/RetroPie/comments/4ceyty/you_cant_get_cheats_to_work_well_heres_how/?st=j7v6dzmd&sh=f09316a4 
 

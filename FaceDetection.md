@@ -2,6 +2,10 @@
 
 ## 簡介
 
+### 學習目標
+
+### 運作架構
+
 本專案是以opencv 與樹梅派去實現人臉偵測的功能，圖示為人臉偵測的運作架構，分成三個區塊:
 
 1. 從樹梅派相機接收影像
@@ -11,6 +15,7 @@
 3. 把偵測人臉的結果顯示在螢幕上
 
 ![image](https://github.com/MrLiuLiuLiu/RaspberryPi/blob/master/RaspberryPi%E4%BA%BA%E8%87%89%E5%81%B5%E6%B8%AC%E9%81%8B%E4%BD%9C%E6%9E%B6%E6%A7%8B.png)
+
  
 ## 工作原理
 

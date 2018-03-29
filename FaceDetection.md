@@ -60,13 +60,18 @@
 ### 人臉偵測
 
 
-1.	注意事項 : 先確認OpenCV 放置Cascade Classifier的路徑，若無更改路徑會發生編譯錯誤的訊息，使用OpenCV預設路徑為:
+#### 注意事項 
+
+先確認OpenCV 放置Cascade Classifier的路徑，若無更改路徑會發生編譯錯誤的訊息，使用OpenCV預設路徑為:
  ```
     /home/pi/opencv-3.0.0/data/haarcascades/haarcascade_frontalface_alt.xml'
 ```
-2.	靜態辨識 : 透過Picamera鏡頭拍攝圖像後，人臉辨識結果以圖片方式呈現，程式碼參照[OpenCV with Raspberry Pi Camera Face Detection Tutorial](https://pythonprogramming.net/raspberry-pi-camera-opencv-face-detection-tutorial/) 
 
-3.	動態辨識 : 透過Picamera鏡頭以錄影方式，進行人臉辨識，程式碼參照[Raspberry-Pi-Camera-Face-Detection-Python](https://github.com/AsankaD7/Raspberry-Pi-Camera-Face-Detection-Python/blob/master/faceDetectPiVideo.py) 
+#### 參考教學
+
+- 靜態辨識 : 透過Picamera鏡頭拍攝圖像後，人臉辨識結果以圖片方式呈現，程式碼參照[OpenCV with Raspberry Pi Camera Face Detection Tutorial](https://pythonprogramming.net/raspberry-pi-camera-opencv-face-detection-tutorial/) 
+
+- 動態辨識 : 透過Picamera鏡頭以錄影方式，進行人臉辨識，程式碼參照[Raspberry-Pi-Camera-Face-Detection-Python](https://github.com/AsankaD7/Raspberry-Pi-Camera-Face-Detection-Python/blob/master/faceDetectPiVideo.py) 
 
 ### Haar-like特徵分類器訓練
 
@@ -81,7 +86,7 @@
 
 ![image](https://github.com/MrLiuLiuLiu/RaspberryPi/blob/master/Haa-like%E7%89%B9%E5%BE%B5%E5%88%86%E9%A1%9E%E5%99%A8%E8%A8%93%E7%B7%B4%E6%B5%81%E7%A8%8B.png)
 
-#### 教學參考
+#### 參考教學
 
 
 

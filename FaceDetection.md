@@ -23,7 +23,9 @@
 圖片來源為:[Vision based interface system for hands free control of an intelligent wheelchair](https://link.springer.com/article/10.1186/1743-0003-6-33#Fig4)
 ![image](https://media.springernature.com/original/springer-static/image/art%3A10.1186%2F1743-0003-6-33/MediaObjects/12984_2008_Article_193_Fig4_HTML.jpg) 
 
-### 使用Haar-like特徵檢測人臉特徵，並使用積分圖（Integral Image）加快對Haar-like特徵求值的速度，詳細說明參照[Haar+Adaboost级联分类器分解](https://blog.csdn.net/lijihw_1022/article/details/51374073) : 
+### 使用Haar-like特徵檢測人臉特徵，並使用積分圖（Integral Image）加快對Haar-like特徵求值的速度
+
+詳細說明參照[Haar+Adaboost级联分类器分解](https://blog.csdn.net/lijihw_1022/article/details/51374073) : 
 
 - Haar-like特徵 : 所有的人臉都有一些相似的特徵，透過Haar-like定義的四種檢測視窗，對待識別的圖片進行掃描，並根據檢測框架中的黑色區域與白色區域之比
   例，計算出該掃描區域的特徵值。

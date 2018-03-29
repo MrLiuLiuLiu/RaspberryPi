@@ -36,8 +36,8 @@
   
 ### 使用AdaBoost算法區分人臉和非人臉
 
-已檢測的人臉特徵值作為一個樣本，每一份樣本視為一個弱分類，AdaBoost便是把弱分類集合， 轉換成強分類，幫助我們建立對人臉偵測更加嚴謹的辨識基準。
-針對AdaBoost演算法大致可分為三個重點，詳細說明參照[AdaBoost算法原理及OpenCV实例](https://blog.csdn.net/dcrmg/article/details/53038993)
+已檢測的人臉特徵值作為一個樣本，每一份樣本視為一個弱分類，AdaBoost便是把弱分類集合，轉換成強分類，幫助我們建立對人臉偵測更加嚴謹的辨識基準。
+針對AdaBoost演算法大致分為三個重點，詳細說明參照[AdaBoost算法原理及OpenCV实例](https://blog.csdn.net/dcrmg/article/details/53038993)
 
 - 針對訓練數據的分布進行初始化 : 假設有N個樣本，則每一個訓練樣本最開始訓練都被赋予相同的權值：1/N。
 
@@ -55,7 +55,7 @@
 ### 人臉偵測
 
 
-1.	注意事項 : 先確認OpenCV 放置Cascade Classifier的路徑，若無更改路徑會發生編譯錯誤的訊息，使用的OpenCV預設路徑為:
+1.	注意事項 : 先確認OpenCV 放置Cascade Classifier的路徑，若無更改路徑會發生編譯錯誤的訊息，使用OpenCV預設路徑為:
  ```
     /home/pi/opencv-3.0.0/data/haarcascades/haarcascade_frontalface_alt.xml'
 ```

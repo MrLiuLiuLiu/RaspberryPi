@@ -55,10 +55,9 @@
 ### 人臉偵測
 
 
-1.	注意事項 : 先確認OpenCV 放置Cascade Classifier的路徑，若無更改路徑會發生編譯錯誤的訊息，這邊使用的OpenCV預設路徑為:
+1.	注意事項 : 先確認OpenCV 放置Cascade Classifier的路徑，若無更改路徑會發生編譯錯誤的訊息，使用的OpenCV預設路徑為:
  ```
     /home/pi/opencv-3.0.0/data/haarcascades/haarcascade_frontalface_alt.xml'
-    
 ```
 2.	靜態辨識 : 透過Picamera鏡頭拍攝圖像後，人臉辨識結果以圖片方式呈現，程式碼參照[OpenCV with Raspberry Pi Camera Face Detection Tutorial](https://pythonprogramming.net/raspberry-pi-camera-opencv-face-detection-tutorial/) 
 

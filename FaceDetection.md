@@ -37,7 +37,7 @@
 ### 使用AdaBoost算法區分人臉和非人臉
 
 已檢測的人臉特徵  值作為一個樣本，每一份樣本視為一個弱分類，AdaBoost便是把弱分類集合， 轉換成強分類，幫助我們建立對人臉偵測更加嚴謹的辨識基準。
-針對AdaBoost演算法大致可分為三個重點，詳細說明可參照[AdaBoost算法原理及OpenCV实例](https://blog.csdn.net/dcrmg/article/details/53038993)
+針對AdaBoost演算法大致可分為三個重點，詳細說明參照[AdaBoost算法原理及OpenCV实例](https://blog.csdn.net/dcrmg/article/details/53038993)
 
 - 針對訓練數據的分布進行初始化 : 假設有N個樣本，則每一個訓練樣本最開始訓練都被赋予相同的權值：1/N。
 
@@ -48,7 +48,6 @@
 
 ### 加入Cascade Classifier把強分類器級聯一起，提高人臉辨識的準確率
 
-一開始將特徵(feature)分成好幾個classifier。最前面的classier辨識率最低，但是可以先篩選掉不是人臉的圖片；
-接下來的Classier處理比較難篩選掉的圖片依此類推，直到最後一個classier為止，留下來的就會是確定有人臉的照片。
+一開始將特徵(feature)分成好幾個classifier。最前面的classier辨識率最低，但是可以先篩選掉不是人臉的圖片；接下來的Classier處理比較難篩選掉的圖片依此類推，直到最後一個classier為止，留下來的就會是確定有人臉的照片。
 
 

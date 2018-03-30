@@ -89,7 +89,7 @@
 - [Creating your own Haar Cascade OpenCV Python Tutorial](https://pythonprogramming.net/haar-cascade-object-detection-python-opencv-tutorial/) : 
 
 本專案參考此程式作為練習Haa-like特徵分類器的操作，並使用單一正面圖像樣本進行訓練，這個程式可分為兩個區塊討論 : 
-###### 資料準備 : 使用Python 透過urlib 套件下載正面圖像樣本或負面圖像樣本(如程式一)，並替除掉無法正常顯示的圖檔(程式二)
+ - 資料準備 : 使用Python 透過urlib 套件下載正面圖像樣本或負面圖像樣本(如程式一)，並替除掉無法正常顯示的圖檔(程式二)
   
   程式一 : 
 ```  
@@ -138,7 +138,7 @@ for i in neg_image_urls.split('\n'):
                 except Exception as e:
                     print(str(e))
  ```                    
- ###### 樣本訓練 :  使用OpenCV Cascade Classifier Training的方式，產生Haar-like特徵分類器需要的樣本進行訓練，參照[Training Haar Cascades](https://memememememememe.me/post/training-haar-cascades/)
+ - 樣本訓練 :  使用OpenCV Cascade Classifier Training的方式，產生Haar-like特徵分類器需要的樣本進行訓練，參照[Training Haar Cascades](https://memememememememe.me/post/training-haar-cascades/)
 
 - [OpenCV haartraining (Rapid Object Detection With A Cascade of Boosted Classifiers Based on Haar-like Features](http://note.sonots.com/SciSoftware/haartraining.html#v6f077ba) :
 

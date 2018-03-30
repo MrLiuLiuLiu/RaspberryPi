@@ -89,7 +89,7 @@
 - [Creating your own Haar Cascade OpenCV Python Tutorial](https://pythonprogramming.net/haar-cascade-object-detection-python-opencv-tutorial/) : 
 
 本專案參考此程式作為練習Haa-like特徵分類器的操作，並使用單一正面圖像樣本進行訓練，這個程式可分為兩個區塊討論 : 
- -資料準備 : 使用Python 透過urlib 套件下載正面圖像樣本或負面圖像樣本(如程式一)，並替除掉無法正常顯示的圖檔(程式二)
+  -資料準備 : 使用Python 透過urlib 套件下載正面圖像樣本或負面圖像樣本(如程式一)，並替除掉無法正常顯示的圖檔(程式二)
   
   程式一 : 
 ```  

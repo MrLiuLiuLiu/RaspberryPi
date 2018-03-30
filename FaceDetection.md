@@ -93,7 +93,7 @@
   - 資料準備 : 使用Python 透過urlib 套件下載正面圖像樣本或負面圖像樣本(如程式一)，並替除掉無法正常顯示的圖檔(程式二)
   
   程式一 : 
-   ```
+```  
 import urllib.request
 import cv2
 import numpy as np
@@ -104,10 +104,10 @@ def store_raw_images():
     neg_image_urls = urllib.request.urlopen(neg_images_link).read().decode()
     pic_num = 1
     
-    if not os.path.exists('neg'):
+if not os.path.exists('neg'):
         os.makedirs('neg')
         
-    for i in neg_image_urls.split('\n'):
+for i in neg_image_urls.split('\n'):
         try:
             print(i)
             urllib.request.urlretrieve(i, "neg/"+str(pic_num)+".jpg")
@@ -117,11 +117,12 @@ def store_raw_images():
             cv2.imwrite("neg/"+str(pic_num)+".jpg",resized_image)
             pic_num += 1
             
-        except Exception as e:
+         except Exception as e:
             print(str(e))  
-  ```           
+```
  程式二 : 
-   ```
+ 
+ ```
     def find_uglies():
     match = False
     for file_type in ['neg']:
@@ -137,7 +138,7 @@ def store_raw_images():
                         os.remove(current_image_path)
                 except Exception as e:
                     print(str(e))
-   ```
+ ```                    
   - 樣本訓練 :  使用OpenCV Cascade Classifier Training的方式，產生Haar-like特徵分類器需要的樣本進行訓練，參照[Training Haar Cascades]
 (https://memememememememe.me/post/training-haar-cascades/)
 

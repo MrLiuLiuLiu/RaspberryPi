@@ -51,7 +51,7 @@
 
 一開始將特徵(feature)分成好幾個classifier。最前面的classier辨識率最低，但是可以先篩選掉不是人臉的圖片；接下來的Classier處理比較難篩選掉的圖片依此類推，直到最後一個classier為止，留下來的就會是確定有人臉的照片。
 
-## 實作教學
+## 實作說明
 
 ### 人臉偵測
 
@@ -60,10 +60,10 @@
 
 先確認OpenCV 放置Cascade Classifier的路徑，若無更改路徑會發生編譯錯誤的訊息，使用OpenCV預設路徑為:
  ```
-    /home/pi/opencv-3.0.0/data/haarcascades/haarcascade_frontalface_alt.xml'
+    /home/pi/opencv-3.0.0/data/haarcascades/haarcascade_frontalface_alt.xml
 ```
 
-#### 參考資料
+#### 參考教學
 
 - 靜態辨識 : 透過Picamera鏡頭拍攝圖像後，人臉辨識結果以圖片方式呈現，程式碼參照[OpenCV with Raspberry Pi Camera Face Detection Tutorial](https://pythonprogramming.net/raspberry-pi-camera-opencv-face-detection-tutorial/) 
 
@@ -82,13 +82,64 @@
 
 ![image](https://github.com/MrLiuLiuLiu/RaspberryPi/blob/master/Haa-like%E7%89%B9%E5%BE%B5%E5%88%86%E9%A1%9E%E5%99%A8%E8%A8%93%E7%B7%B4%E6%B5%81%E7%A8%8B.png)
 
-#### 參考資料
+#### 參考教學
 
 ##### 英文
 
 - [Creating your own Haar Cascade OpenCV Python Tutorial](https://pythonprogramming.net/haar-cascade-object-detection-python-opencv-tutorial/) : 
 
- 本專案參考此程式作為練習Haa-like特徵分類器的操作，並使用單一正面圖像樣本進行訓練
+ 本專案參考此程式作為練習Haa-like特徵分類器的操作，並使用單一正面圖像樣本進行訓練，這個程式可分為兩個區塊討論 : 
+ 
+  - 資料準備 : 使用Python 透過urlib 套件下載正面圖像樣本或負面圖像樣本(如程式一)，並替除掉無法正常顯示的圖檔(程式二)
+  
+  程式一 : 
+   ```
+import urllib.request
+import cv2
+import numpy as np
+import os
+
+def store_raw_images():
+    neg_images_link = '//image-net.org/api/text/imagenet.synset.geturls?wnid=n00523513'   
+    neg_image_urls = urllib.request.urlopen(neg_images_link).read().decode()
+    pic_num = 1
+    
+    if not os.path.exists('neg'):
+        os.makedirs('neg')
+        
+    for i in neg_image_urls.split('\n'):
+        try:
+            print(i)
+            urllib.request.urlretrieve(i, "neg/"+str(pic_num)+".jpg")
+            img = cv2.imread("neg/"+str(pic_num)+".jpg",cv2.IMREAD_GRAYSCALE)
+            # should be larger than samples / pos pic (so we can place our image on it)
+            resized_image = cv2.resize(img, (100, 100))
+            cv2.imwrite("neg/"+str(pic_num)+".jpg",resized_image)
+            pic_num += 1
+            
+        except Exception as e:
+            print(str(e))  
+  ```           
+ 程式二 : 
+   ```
+    def find_uglies():
+    match = False
+    for file_type in ['neg']:
+        for img in os.listdir(file_type):
+            for ugly in os.listdir('uglies'):
+                try:
+                    current_image_path = str(file_type)+'/'+str(img)
+                    ugly = cv2.imread('uglies/'+str(ugly))
+                    question = cv2.imread(current_image_path)
+                    if ugly.shape == question.shape and not(np.bitwise_xor(ugly,question).any()):
+                        print('That is one ugly pic! Deleting!')
+                        print(current_image_path)
+                        os.remove(current_image_path)
+                except Exception as e:
+                    print(str(e))
+   ```
+  - 樣本訓練 :  使用OpenCV Cascade Classifier Training的方式，產生Haar-like特徵分類器需要的樣本進行訓練，參照[Training Haar Cascades]
+(https://memememememememe.me/post/training-haar-cascades/)
 
 - [OpenCV haartraining (Rapid Object Detection With A Cascade of Boosted Classifiers Based on Haar-like Features](http://note.sonots.com/SciSoftware/haartraining.html#v6f077ba) :
 

@@ -12,7 +12,7 @@
 
 ### 條碼掃描 
 
-本專案以[z-bar 1.04](https://pypi.python.org/pypi/zbar-py/1.0.4)版本套件實作條碼辨識，但使用的攝像頭是Pi camera 並無自動對焦，因此可以掃描的條碼類型為 : 二維條碼
+本專案以[z-bar 1.04](https://pypi.python.org/pypi/zbar-py/1.0.4)版本套件實作條碼辨識，但使用的攝像頭是Pi camera 並無自動對焦，因此可以掃描條碼類型為:二維條碼。
 
  ```
 from picamera.array import PiRGBArray
@@ -70,11 +70,13 @@ cv2.destroyAllWindows()
  
 ### 安裝UV4L驅動程式(選擇性)
 
-在/dev/video0中找不到[Pi Camera Module](https://www.ics.com/blog/raspberry-pi-camera-module )，是因為Raspberry Pi的相機模組是由CSI介面傳輸，Linux系統的攝影驅動程式並不支援此類型，需要安裝UV4L驅動程式才可以啟動相機模組，詳細說明參照:[Raspberry Pi 3 CSI介面攝影機的UV4L驅動安裝](http://kenneth.tw/2017/03/13/raspberry-pi-3-csi介面攝影機的uv4l驅動安裝-2) & [解決 Raspberry Pi 找不到 /dev/video0](http://open-rotorman.blogspot.tw/2014/06/raspberry-pi-raspberry-pi-devvideo0.html)
+在/dev/video0中找不到[Pi Camera Module](https://www.ics.com/blog/raspberry-pi-camera-module )，是因為Raspberry Pi的相機模組是由CSI介面傳輸，Linux系統的攝影驅動程式並不支援此類型，需要安裝UV4L驅動程式才可以啟動相機模組，詳細說明參照:[Raspberry Pi 3 CSI介面攝影機的UV4L驅動安裝](http://kenneth.tw/2017/03/13/raspberry-pi-3-csi介面攝影機的uv4l驅動安裝-2) & [解決 Raspberry Pi 找不到 /dev/video0](http://open-rotorman.blogspot.tw/2014/06/raspberry-pi-raspberry-pi-devvideo0.html)。
 
 ### 聲音提醒
 
-以RPI.GPIO套件的[PWM](https://sourceforge.net/p/raspberry-gpio-python/wiki/PWM/)函式控制[蜂鳴器](https://sites.google.com/site/zsgititit/home/raspberry-shu-mei-pai/raspberry-shi-yong-fengbuzzier)的聲響。程式運作的流程是先判斷Pi Camera 攝像頭是否讀取到條碼型式，若有則發出提示聲，若無則不發出聲響。蜂鳴器補充說明:[Buzzer Module](https://www.sunfounder.com/learn/sensor-kit-v2-0-for-raspberry-pi-b-plus/lesson-10-buzzer-module-sensor-kit-v2-0-for-b-plus.html)
+以RPI.GPIO套件的[PWM](https://sourceforge.net/p/raspberry-gpio-python/wiki/PWM/)函式控制[蜂鳴器](https://sites.google.com/site/zsgititit/home/raspberry-shu-mei-pai/raspberry-shi-yong-fengbuzzier)的聲響。程式運作的流程是先判斷Pi Camera 攝像頭是否讀取到條碼型式，若有則發出提示聲，若無則不發出聲響。
+
+蜂鳴器補充說明:[Buzzer Module](https://www.sunfounder.com/learn/sensor-kit-v2-0-for-raspberry-pi-b-plus/lesson-10-buzzer-module-sensor-kit-v2-0-for-b-plus.html)
 
  ```
 for frame in camera.capture_continuous(rawCapture, format="bgr", use_video_port=True):
@@ -109,7 +111,7 @@ for frame in camera.capture_continuous(rawCapture, format="bgr", use_video_port=
                break
  ```
 
-假如程式執行時會出現下圖的警告，解決辦法是在picamera 接收影像的程式區塊中加入try ….. catch 異常處理方式。詳細說明參照:
+假如程式執行時會出現下圖的警告，解決辦法是在picamera 接收影像的程式區塊中加入try ….. catch 異常處理方式，詳細說明參照:
 
 - [How To Best Use Try Except In Python – Especially For Beginners](http://www.techbeamers.com/use-try-except-python/)
 - [try、raise 陳述句](https://openhome.cc/Gossip/Python/TryStatement.html)
@@ -219,11 +221,9 @@ finally:
 	GPIO.cleanup()
 
  ```
- 
-dpkg -L package_name : 檢視 apt-get install 檔案安裝的路徑 :  
 
-Where does apt-get install GO
-https://www.raspberrypi.org/forums/viewtopic.php?t=59463 
+### 常用指令
 
-2.	sudo nano /etc/modules : 編輯/etc/modules ，自動匯入模組
-3.	rm – 刪除檔案及目錄指令 : rm –r  目錄名稱
+- dpkg -L package_name : 檢視 apt-get install 檔案安裝的路徑 ，說明參考[Where does apt-get install GO](https://www.raspberrypi.org/forums/viewtopic.php?t=59463)
+- sudo nano /etc/modules : 編輯/etc/modules ，自動匯入模組
+- rm – 刪除檔案及目錄指令 : rm –r  目錄名稱

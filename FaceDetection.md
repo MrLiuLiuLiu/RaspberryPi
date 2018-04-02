@@ -1,4 +1,4 @@
-# 使用Pi camera 與 OpenCV 進行人臉偵測
+# 人臉偵測-使用Pi Camera 與 OpenCV
 
 ## 簡介
 

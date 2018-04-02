@@ -78,7 +78,7 @@ cv2.destroyAllWindows()
 
 蜂鳴器補充說明:[Buzzer Module](https://www.sunfounder.com/learn/sensor-kit-v2-0-for-raspberry-pi-b-plus/lesson-10-buzzer-module-sensor-kit-v2-0-for-b-plus.html)
 
-[!image](https://github.com/MrLiuLiuLiu/RaspberryPi/blob/master/Using%20PWM%20in%20RPi.GPIO%20For%20Buzzer2.png)
+![image](https://github.com/MrLiuLiuLiu/RaspberryPi/blob/master/Using%20PWM%20in%20RPi.GPIO%20For%20Buzzer2.png)
  ```
 for frame in camera.capture_continuous(rawCapture, format="bgr", use_video_port=True):
             
@@ -113,6 +113,7 @@ for frame in camera.capture_continuous(rawCapture, format="bgr", use_video_port=
  ```
 
 假如程式執行時會出現下圖的警告，解決辦法是在picamera 接收影像的程式區塊中加入try ….. catch 異常處理方式，詳細說明參照:
+
 ![image](https://github.com/MrLiuLiuLiu/RaspberryPi/blob/master/Warning%20For%20Using%20GPIO.png)
 
 - [How To Best Use Try Except In Python – Especially For Beginners](http://www.techbeamers.com/use-try-except-python/)
@@ -177,7 +178,7 @@ finally:
 - [Python 学习笔记 （6）—— 读写文件](http://blog.51cto.com/pmghong/1349978)
 - [Python - 文件I / O](http://www.tutorialspoint.com/python/python_files_io.htm) 
 
-[!image](https://github.com/MrLiuLiuLiu/RaspberryPi/blob/master/Using%20csv%20package%20%26%20Python%20IO%20to%20%20upload%20scanned%20data.png)
+![image](https://github.com/MrLiuLiuLiu/RaspberryPi/blob/master/Using%20csv%20package%20%26%20Python%20IO%20to%20%20upload%20scanned%20data.png)
 ```
 try:
 

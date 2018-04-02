@@ -13,6 +13,13 @@
 
   ### 影像處理
 -------------------------------------------------------------------------------------------
+- [條碼掃描-使用Pi Camera & OpenCV](https://github.com/MrLiuLiuLiu/RaspberryPi/blob/master/ImageProcessing/Barcode_Scan/BarcodeScan.md)
+- [人臉偵測-使用Pi Camera 與 OpenCV](https://github.com/MrLiuLiuLiu/RaspberryPi/blob/master/ImageProcessing/Face_Detection/FaceDetection.md)
+- [Pi Camera 使用教學](https://github.com/MrLiuLiuLiu/RaspberryPi/blob/master/ImageProcessing/Picamera/Picamera.md)
 
   ### 遠端連線
 -------------------------------------------------------------------------------------------
+
+- [即時影像監控-使用Pi Camera & Motion](https://github.com/MrLiuLiuLiu/RaspberryPi/blob/master/Remote_Connect/WebSteaming.md)
+
+
